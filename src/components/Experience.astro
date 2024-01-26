@@ -1,0 +1,45 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+
+
+const EXPERIENCE = [
+    { 
+        date: 'Noviembre 2022 – Enero 2023',
+        title: 'Pratica laboral | Servicios de capacitación Electromechanics Limitada.',
+        description: 'Programador junior de módulos de gestión educacional y desarrollo de BACKEND, aplicaciones SAAS, lenguajes usados PHP/HTML/CSS/JAVASCRIPT/BOOTSTRAP/AJAX/MYSQL además desarrollo de FRONTEND creación interfaz de usuarios, gestión interfaz para recursos humanos, formularios, gestión de tablas, etc.',
+        link: '#',
+
+    },
+    { 
+        date: 'January 2022',
+        title: 'Frontend Developer',
+        description: 'Desarrollo de una landing page para una tienda de ropa.',
+        link: '#',
+
+    },
+    { 
+        date: 'January 2021',
+        title: 'Frontend Developer',
+        description: 'Desarrollo de una landing page para una tienda de ropa.',
+        link: '#',
+    }
+];
+
+---
+
+
+
+<ol class="relative border-s border-gray-200 ml-3">
+
+  {
+    EXPERIENCE.map((experience) => (
+    <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+    </li>
+      
+    ))
+  }
+
+ 
+</ol>
