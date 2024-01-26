@@ -24,7 +24,7 @@ export default defineConfig({
       ]);
 
       // Añade un archivo CNAME si es necesario
-      await writeFile('.astro/public/CNAME', 'mi-domino.github.io');
+      await writeFile('.astro/public/CNAME', 'https://kevinariasdevweb.github.io/');
     },
   },
 });
